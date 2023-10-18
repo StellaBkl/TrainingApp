@@ -1,0 +1,16 @@
+<h1 mat-dialog-title style="text-align: center;">{{data.name}}</h1>
+<mat-dialog-content style="text-align: center;" *ngIf="data.progress!==100">
+    <p>Your progress is {{data.progress}}%</p>
+    <p>You are doing great! Keep up the good work!</p>
+</mat-dialog-content>
+<mat-dialog-content style="text-align: center;" *ngIf="data.progress===100">
+    <p>This training is complete!</p>
+    <h2 style="color: green;">{{data.progress}}%</h2>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button [mat-dialog-close]="false" *ngIf="data.progress!==100">Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial color="accent"
+        *ngIf="data.progress!==100">Resume</button>
+    <button mat-button [mat-dialog-close]="false" cdkFocusInitial color="primary"
+        *ngIf="data.progress===100">OK</button>
+</mat-dialog-actions>

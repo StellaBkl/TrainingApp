@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fitness-tracker-5f48d": {
+      "hosting": {
+        "angular-material-project": [
+          "fitness-tracker-5f48d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fitness-tracker-5f48d"
+  }
+}

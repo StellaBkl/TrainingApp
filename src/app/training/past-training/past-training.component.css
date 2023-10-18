@@ -1,0 +1,11 @@
+tr.mat-row-exercises:hover {
+    background: whitesmoke;
+}
+
+tr.mat-row-exercises:active {
+    background: #efefef;
+}
+
+tr.mat-row-exercises {
+    cursor: pointer;
+}
